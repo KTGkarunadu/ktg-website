@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ಕರ್ನಾಟಕ ಟೂರಿಸ್ಟ್ ಗೈಡ್ (KTG) - ಅಧಿಕೃತ ಆಪ್</title>
+    <title>ಕರ್ನಾಟಕ ಟೂರಿಸ್ಮೆಂಟ್ ಗೈಡ್ (KTG) - ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್</title>
     <style>
         * {
             margin: 0;
@@ -12,119 +12,216 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #fff9e6;
+            background-color: #fff8f0;
             color: #333;
             line-height: 1.6;
         }
         header {
             background: linear-gradient(135deg, #d32f2f, #b71c1c);
-            color: #ffeb3b;
-            padding: 30px 0;
+            color: white;
+            padding: 25px 15px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 24px;
+            margin-bottom: 5px;
         }
         header p {
-            font-size: 1.2rem;
-            color: #ffffff;
+            font-size: 14px;
+            opacity: 0.9;
         }
-        .hero {
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .download-btn-container {
             text-align: center;
-            padding: 60px 20px;
-            background-color: #ffeb3b;
-            color: #b71c1c;
+            margin: 20px 0;
         }
-        .hero h2 {
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px auto;
-            color: #333;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #d32f2f;
-            color: #ffeb3b;
-            padding: 15px 35px;
-            font-size: 1.2rem;
-            font-weight: bold;
+        .btn-download {
+            background: #d32f2f;
+            color: white;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 30px;
-            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4);
-            transition: 0.3s;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: background 0.3s;
         }
-        .btn:hover {
-            background-color: #b71c1c;
-            transform: scale(1.05);
+        .btn-download:hover {
+            background: #b71c1c;
         }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 50px 20px;
-            max-width: 1100px;
-            margin: 0 auto;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
         .card {
             background: white;
-            border: 2px solid #d32f2f;
-            border-radius: 15px;
-            width: 320px;
-            margin: 15px;
-            padding: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-top: 4px solid #d32f2f;
         }
         .card h3 {
-            color: #d32f2f;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #b71c1c;
+        }
+        .card p {
+            font-size: 13px;
+            color: #666;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+        .section h2 {
+            font-size: 18px;
+            color: #b71c1c;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #ffccbc;
+            padding-bottom: 5px;
+        }
+        .section p, .section li {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .youtube-box {
+            text-align: center;
+            background: #ffebee;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 1px dashed #d32f2f;
+        }
+        .yt-btn {
+            background: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
         }
         footer {
-            background-color: #212121;
-            color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
+            background: #333;
+            color: white;
+            font-size: 13px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>ಕರ್ನಾಟಕ ಟೂರಿಸ್ಟ್ ಗೈಡ್ (KTG)</h1>
-    <p>ನಿಮ್ಮ ಪ್ರವಾಸವನ್ನು ಸುಲಭ ಮತ್ತು ಸ್ಮರಣೀಯವಾಗಿಸಿ</p>
+    <h1>ಕರ್ನಾಟಕ ಟೂರಿಸ್ಮೆಂಟ್ ಗೈಡ್ (KTG)</h1>
+    <p>ನಿಮ್ಮ ಪ್ರವಾಸವನ್ನು ಸುಲಭ ಹಾಗೂ ಸ್ಮರಣೀಯವಾಗಿಸಿ</p>
 </header>
 
-<section class="hero">
-    <h2>ಕರ್ನಾಟಕದ ಅದ್ಭುತ ಪ್ರವಾಸಿ ತಾಣಗಳನ್ನು ಅನ್ವೇಷಿಸಿ</h2>
-    <p>ನಮ್ಮ ಆಪ್ ಮೂಲಕ ಅತ್ಯುತ್ತಮ ಟೂರ್ ಪ್ಯಾಕೇಜ್‌ಗಳು, ಹೋಮ್‌ಸ್ಟೇ ಬುಕಿಂಗ್ ಮತ್ತು ಸ್ಥಳೀಯ ಗೈಡ್‌ಗಳ ಸಂಪೂರ್ಣ ಮಾಹಿತಿ ಪಡೆದುಕೊಳ್ಳಿ.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.karnataka_tourist_guide_k_t_g" class="btn" target="_blank">📲 ಪ್ಲೇ ಸ್ಟೋರ್‌ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</a>
-</section>
+<div class="container">
 
-<section class="features">
-    <div class="card">
-        <h3>🏛️ ಟೂರ್ ಪ್ಯಾಕೇಜ್‌ಗಳು</h3>
-        <p>ವಿವಿಧ ಐತಿಹಾಸಿಕ ಮತ್ತು ಧಾರ್ಮಿಕ ಸ್ಥಳಗಳಿಗೆ ಅತ್ಯುತ್ತಮ ಟೂರ್ ಪ್ಯಾಕೇಜ್ ಮಾಹಿತಿ ಮತ್ತು ಬುಕಿಂಗ್ ಸೌಲಭ್ಯ.</p>
+    <!-- App Download Button -->
+    <div class="download-btn-container">
+        <a href="#" class="btn-download">📥 ಆಪ್ ನೇರವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</a>
     </div>
-    <div class="card">
-        <h3>🏡 ಹೋಮ್‌ಸ್ಟೇ ಬುಕಿಂಗ್</h3>
-        <p>ನಿಮಗೆ ಇಷ್ಟವಾದ ಸ್ಥಳಗಳಲ್ಲಿ ಅತ್ಯುತ್ತಮ ರೂಮ್ ಹಾಗೂ ಹೋಮ್‌ಸ್ಟೇಗಳನ್ನು ನೇರವಾಗಿ ವಿಚಾರಿಸಿ ಬುಕ್ ಮಾಡಿ.</p>
+
+    <!-- Features Grid -->
+    <div class="grid">
+        <div class="card">
+            <h3>ಜಿಲ್ಲೆಗಳು & ತಾಲೂಕುಗಳು</h3>
+            <p>ಕರ್ನಾಟಕದ ಎಲ್ಲಾ ಐತಿಹಾಸಿಕ ಹಾಗೂ ಧಾರ್ಮಿಕ ಸ್ಥಳಗಳ ಸಮಗ್ರ ಮಾಹಿತಿ.</p>
+        </div>
+        <div class="card">
+            <h3>ರೂಮ್ ಬುಕಿಂಗ್</h3>
+            <p>ನಿಮಗೆ ಇಷ್ಟವಾದ ಸ್ಥಳಗಳಲ್ಲಿ ಹೋಮ್‌ಸ್ಟೇ ಹಾಗೂ ಹೋಟೆಲ್ ಬುಕಿಂಗ್.</p>
+        </div>
+        <div class="card">
+            <h3>ಎಮರ್ಜೆನ್ಸಿ SOS</h3>
+            <p>ತುರ್ತು ಸಂದರ್ಭಗಳಲ್ಲಿ 112 ಹಾಗೂ ಸಹಾಯವಾಣಿ ಸಂಪರ್ಕ.</p>
+        </div>
+        <div class="card">
+            <h3>ಪ್ರಯಾಣ ಬುಕಿಂಗ್</h3>
+            <p>KSRTC, Namma Yatri, Ola, Uber, RedBus & IRCTC ಸೌಲಭ್ಯ.</p>
+        </div>
     </div>
-    <div class="card">
-        <h3>🤝 ನೇರ ವಾಟ್ಸಾಪ್ ಸಂಪರ್ಕ</h3>
-        <p>ಯಾವುದೇ ಪ್ಯಾಕೇಜ್ ಅಥವಾ ರೂಮ್ ಬುಕಿಂಗ್‌ಗಾಗಿ ನೇರವಾಗಿ ವಾಟ್ಸಾಪ್ ಮೂಲಕ ಸಂಪರ್ಕಿಸುವ ಸುಲಭ ವ್ಯವಸ್ಥೆ.</p>
+
+    <!-- About App & Developer Info -->
+    <div class="section">
+        <h2>ಆಪ್ ಬಗ್ಗೆ ಹಾಗೂ ಡೆವಲಪರ್ ಮಾಹಿತಿ</h2>
+        <p><strong>ಆಪ್ ಹೆಸರು:</strong> ಕರ್ನಾಟಕ ಟೂರಿಸ್ಮೆಂಟ್ ಗೈಡ್ (KTG - Nammakkara Karunadu)</p>
+        <p><strong>ಸೃಷ್ಟಿಕರ್ತರು (Developer):</strong> Ram</p>
+        <p><strong>ಪ್ರಾರಂಭ / ಬಿಡುಗಡೆ ವರ್ಷ:</strong> 2026</p>
+        <p>ಕರ್ನಾಟಕದ ಪ್ರವಾಸಿಗರಿಗೆ ಅತ್ಯುತ್ತಮ ಮಾರ್ಗದರ್ಶನ ನೀಡುವ ಉದ್ದೇಶದಿಂದ ಈ ಡಿಜಿಟಲ್ ವೇದಿಕೆಯನ್ನು ರೂಪಿಸಲಾಗಿದೆ. ಸ್ಥಳೀಯ ಗೈಡ್‌ಗಳು, ಮ್ಯಾಪ್ ನ್ಯಾವಿಗೇಷನ್, ಹವಾಮಾನ ಮಾಹಿತಿ ಮತ್ತು ತುರ್ತು QR ಕೋಡ್ ಸೌಲಭ್ಯಗಳನ್ನು ಇದು ಹೊಂದಿದೆ.</p>
     </div>
-</section>
+
+    <!-- YouTube Channel Section -->
+    <div class="youtube-box">
+        <h3>💥 ನಮಸ್ಕಾರ ಕರುನಾಡು 🌍 - ಯೂಟ್ಯೂಬ್ ಚಾನಲ್</h3>
+        <p>ಕರ್ನಾಟಕದ ಸುಂದರ ಪ್ರವಾಸಿ ತಾಣಗಳ ವೀಡಿಯೊಗಳಿಗಾಗಿ ನಮ್ಮ ಅಧಿಕೃತ ಯೂಟ್ಯೂಬ್ ಚಾನಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.</p>
+        <a href="https://youtube.com/@KarnakatatouristGuide" target="_blank" class="yt-btn">ಚಾನಲ್ ವೀಕ್ಷಿಸಿ & Subscribe ಮಾಡಿ</a>
+    </div>
+
+    <!-- Terms & Conditions -->
+    <div class="section">
+        <h2>ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು (Terms & Conditions)</h2>
+        <ul>
+            <li>ಈ ವೆಬ್‌ಸೈಟ್ ಮತ್ತು ಆಪ್‌ನಲ್ಲಿರುವ ಮಾಹಿತಿಯು ಪ್ರವಾಸಿಗರ ಸಾಮಾನ್ಯ ಮಾರ್ಗದರ್ಶನಕ್ಕಾಗಿ ಮಾತ್ರ ನೀಡಲಾಗಿದೆ.</li>
+            <li>ಹೋಮ್‌ಸ್ಟೇ, ಹೋಟೆಲ್ ಹಾಗೂ ಸಾರಿಗೆ ಬುಕಿಂಗ್‌ಗಳಿಗೆ (Ola, Uber, KSRTC, RedBus ಇತ್ಯಾದಿ) ಆಯಾ ಸಂಸ್ಥೆಗಳ ಸ್ವಂತ ನಿಯಮಗಳು ಅನ್ವಯಿಸುತ್ತವೆ.</li>
+            <li>ಬಳಕೆದಾರರು ಈ ಆಪ್ ಅನ್ನು ಬಳಸುವ ಮೂಲಕ ನಮ್ಮ ಎಲ್ಲಾ ನಿಯಮಗಳಿಗೆ ಒಪ್ಪಿಗೆ ಸೂಚಿಸಿದಂತೆ ಭಾವಿಸಲಾಗುತ್ತದೆ.</li>
+        </ul>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div class="section">
+        <h2>ಗೌಪ್ಯತಾ ನೀತಿ (Privacy Policy)</h2>
+        <p>ಬಳಕೆದಾರರ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಮತ್ತು ಎಮರ್ಜೆನ್ಸಿ ಪ್ರೊಫೈಲ್ ವಿವರಗಳನ್ನು ಅತ್ಯಂತ ಸುರಕ್ಷಿತವಾಗಿ ಕಾಪಾಡಿಕೊಳ್ಳಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಯಾವುದೇ ರಹಸ್ಯ ಅಥವಾ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನಾವು ಮೂರನೇ ವ್ಯಕ್ತಿಗಳೊಂದಿಗೆ ಅಥವಾ ಕಂಪನಿಗಳೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ.</p>
+    </div>
+
+    <!-- Cookie Policy -->
+    <div class="section">
+        <h2>ಕುಕೀಸ್ ಪಾಲಿಸಿ (Cookie Policy)</h2>
+        <p>ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಬಳಕೆದಾರರ ಅನುಭವವನ್ನು (User Experience) ಸುಧಾರಿಸಲು ಮತ್ತು ಸೈಟ್‌ನ ಕಾರ್ಯನಿರ್ವಹಣೆಯನ್ನು ವಿಶ್ಲೇಷಿಸಲು ಸಣ್ಣ ಮಟ್ಟದ ಕುಕೀಸ್ (Cookies) ಅಥವಾ ಲೋಕಲ್ ಸ್ಟೋರೇಜ್ ಅನ್ನು ಬಳಸಿಕೊಳ್ಳುತ್ತದೆ. ಬಳಕೆದಾರರು ತಮ್ಮ ಬ್ರೌಸರ್ ಸೆಟ್ಟಿಂಗ್ಸ್ ಮೂಲಕ ಕುಕೀಸ್ ಅನ್ನು ನಿರ್ಬಂಧಿಸುವ ಸ್ವಾತಂತ್ರ್ಯವನ್ನು ಹೊಂದಿರುತ್ತಾರೆ.</p>
+    </div>
+
+    <!-- Disclaimer & Limitation of Liability -->
+    <div class="section">
+        <h2>ಹಕ್ಕು ನಿರಾಕರಣೆ (Disclaimer)</h2>
+        <p><strong>SOS ತುರ್ತು ಸೇವೆಗಳ ಬಗ್ಗೆ:</strong> ನಮ್ಮ ಆಪ್‌ನಲ್ಲಿರುವ ಎಮರ್ಜೆನ್ಸಿ SOS ಮತ್ತು ಸಹಾಯವಾಣಿ ನಂಬರ್‌ಗಳು ಕೇವಲ ಪ್ರವಾಸಿಗರ ತುರ್ತು ಸಹಾಯಕ್ಕಾಗಿ ಸಾರ್ವಜನಿಕವಾಗಿ ಲಭ್ಯವಿರುವ ಮಾಹಿತಿಯಾಗಿದೆ. ಯಾವುದೇ ತುರ್ತು ಸಂದರ್ಭಗಳಲ್ಲಿ ಉಂಟಾಗುವ ವಿಳಂಬಕ್ಕೆ ಅಥವಾ ತಾಂತ್ರಿಕ ಅಡಚಣೆಗಳಿಗೆ ಕರ್ನಾಟಕ ಟೂರಿಸ್ಮೆಂಟ್ ಗೈಡ್ (KTG) ನೇರ ಜವಾಬ್ದಾರಿಯಲ್ಲ.</p>
+        <p><strong>ಮೂರನೇ ಪಕ್ಷದ ಸೇವೆಗಳು (Third-Party Services):</strong> ಈ ಆಪ್ ಮೂಲಕ ಪ್ರವೇಶಿಸುವ ಅಥವಾ ಲಿಂಕ್ ಮಾಡಲಾದ ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಅಥವಾ ಬುಕಿಂಗ್ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗಳ ಸೇವಾ ನ್ಯೂನತೆಗಳಿಗೆ ಅಥವಾ ಹಣಕಾಸಿನ ವ್ಯವಹಾರಗಳಿಗೆ ಆಯಾ ಸಂಸ್ಥೆಗಳೇ ಸಂಪೂರ್ಣ ಜವಾಬ್ದಾರರು.</p>
+    </div>
+
+    <!-- Contact / Enquiry Section -->
+    <div class="section">
+        <h2>ಸಹಾಯ ಹಾಗೂ ಪ್ರಶ್ನೆಗಳಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ</h2>
+        <p>ವೆಬ್‌ಸೈಟ್, ಆಪ್ ಅಥವಾ ಸೇವೆಗಳ ಬಗ್ಗೆ ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ, ಸಲಹೆಗಳಿದ್ದರೆ ಅಥವಾ ದೂರುಗಳಿದ್ದರೆ ನೇರವಾಗಿ ನಮಗೆ ಇಮೇಲ್ ಮೂಲಕ ಸಂಪರ್ಕಿಸಬಹುದು:</p>
+        <p>📧 <strong>ಅಧಿಕೃತ ಇಮೇಲ್:</strong> <a href="mailto:karnatarakatouristguide@gmail.com">karnatarakatouristguide@gmail.com</a></p>
+    </div>
+
+    <!-- App Version -->
+    <div style="text-align: center; margin: 20px 0; color: #666; font-size: 13px;">
+        <p><strong>ಅಪ್ಲಿಕೇಶನ್ ವರ್ಶನ್ (App Version):</strong> v1.0.0 (Latest)</p>
+    </div>
+
+</div>
 
 <footer>
-    <p>&copy; 2026 ಕರ್ನಾಟಕ ಟೂರಿಸ್ಟ್ ಗೈಡ್ (KTG). ಎಲ್ಲ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</p>
+    <p>&copy; 2026 ಕರ್ನಾಟಕ ಟೂರಿಸ್ಮೆಂಟ್ ಗೈಡ್ (KTG). ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</p>
 </footer>
 
 </body>
